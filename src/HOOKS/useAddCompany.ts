@@ -21,9 +21,9 @@ export const useAddCompany = () => {
       };
       try {
         await setCompany(newCompany).unwrap();
-        setName(""); // Очистка полей после успешного добавления
+        setName(""); 
         setAddress("");
-        refetch(); // Обновление списка компаний
+        refetch();
       } catch (error) {
         console.error("Ошибка при добавлении компании:", error);
       }
